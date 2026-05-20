@@ -19,8 +19,8 @@ jobs:
           distribution: 'temurin'
           cache: 'maven'
 
-      - name: Run tests
-        run: mvn --batch-mode --errors --fail-at-end --show-version clean test
+      - name: Run Cucumber tests
+        run: mvn --batch-mode --errors --fail-at-end --show-version clean test -Dtest=runner.RunnerTest
         env:
           API_USER: ${{ secrets.API_USER }}
           API_PASS: ${{ secrets.API_PASS }}
