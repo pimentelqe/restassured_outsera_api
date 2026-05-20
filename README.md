@@ -122,6 +122,7 @@ target/site/allure-maven-plugin/index.html
 
 Exemplo do relatorio Allure:
 
+![Print do relatorio Allure](report.png)
 
 ## CI/CD no GitHub Actions
 
