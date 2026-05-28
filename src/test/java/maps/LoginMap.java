@@ -14,10 +14,14 @@ public class LoginMap {
         return login;
     }
 
-    public static  void initLogin(){
+    public static void initLogin() {
         login = new HashMap<>();
         login.put("username", getApiUsername());
         login.put("password", getApiPassword());
+    }
+
+    public static void initFromMap(Map<String, Object> data) {
+        login = new HashMap<>(data);
     }
 
 }
